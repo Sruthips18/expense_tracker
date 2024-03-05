@@ -1,1 +1,12 @@
 <p>summary works!</p>
+<div class="container">
+    <div class="d-flex justify-content-center gap-4">
+        <div class="border border-2 p-3 alert alert-success shadow"><h3 class="fw-bolder">Total Income: {{totalIncome}}</h3></div>
+        <div class="border border-2 p-3 alert alert-danger shadow"><h3 class="fw-bolder">Total Expense: {{totalExpense}}</h3></div>
+    </div>
+    <div>
+        <div *ngFor="let cat of summary">
+            {{cat}}
+        </div>
+    </div>
+</div>
